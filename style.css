@@ -99,7 +99,7 @@ main{
     flex-direction: column;
     background-color: var(--color-lighter);
     justify-content: space-between;
-    box-shadow: 0px 1px 10px black;
+    box-shadow: 0px 4px 2px -2px grey;
     
 }
 
@@ -164,7 +164,7 @@ main{
 }
 
 .greeting-text-top{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .user-greeting .greeting-picture img{
@@ -193,7 +193,7 @@ main{
     transform: scale(1.1);
     background-color: var(--color-dark);
     border-color: red;
-    border-style: groove;
+    box-shadow: 4px 4px 2px black;
 }
 
 .content-section{
@@ -238,7 +238,7 @@ main{
     border-radius: 5px;
     background-color: var(--color-lighter);
     border-left: 10px solid var(--color-darker);
-    box-shadow: 0 2px 3px black;
+    box-shadow: 0 2px 3px grey;
 }
 
 .project-card .card-title{
@@ -269,7 +269,7 @@ main{
 .announcement-section,
 .trending-section{
     background-color: var(--color-lighter);
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px grey;
     border-radius: 5px;
     font-size: 0.8rem;
     padding: 5px 10px;
