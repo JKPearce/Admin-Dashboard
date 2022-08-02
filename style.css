@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root{
+    --color-lighter: #f0f9ff;
+    --color-light: #e0f2fe;
+    --color-middle: #7dd3fc;
+    --color-dark: #0284c7;
+    --color-darker: #075985;
+}
+
 body{
-    background-color: powderblue;
+    background-color: var(--color-light);
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -10,22 +18,74 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+ul{
+    margin: 0;
+    pad: 0;
+}
+
+nav{
+    padding: 1.25rem;
+}
+
 .sidebar{
-    background-color: blue;
-    color: white;
+    background-color: var(--color-darker);
+    color: var(--color-light);
     min-width: 15em;
 }
 
 .sidebar nav a{
     text-decoration: none;
-    padding: 0 0 0.5em 2em;
-    display: block;
+}
+
+.sidebar-title{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.nav-top{
+    margin-bottom: 5rem;
+}
+
+.nav-item{
+    display: flex;
+    gap: 0.1em;
+    align-items: center;
 }
 
 .sidebar a:visited{
     text-decoration: none;
-    color: white;
+    color: var(--color-light);
 }
+
+.sidebar a:hover{
+    text-decoration: none;
+    color: var(--color-lighter);
+    transform: scale(1.1);
+}
+
+svg{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+aside svg {
+    margin-right: 0.5rem;
+    align-self: center;
+}
+
+aside svg path {
+    fill: var(--color-light);
+}
+
+
 
 main{
     display: flex;
@@ -59,6 +119,9 @@ main{
 .search-bar{
     width: 100%;
     padding: 0.4rem;
+    border-radius: 20px;
+    border: 0;
+    background-color: lightgray;
 }
 
 .profile-section{
