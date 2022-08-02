@@ -3,9 +3,9 @@
 :root{
     --color-lighter: #f0f9ff;
     --color-light: #e0f2fe;
-    --color-middle: #7dd3fc;
-    --color-dark: #0284c7;
-    --color-darker: #075985;
+    --color-middle: #0ea5e9;
+    --color-dark: #0369a1;
+    --color-darker: #0c4a6e;
 }
 
 body{
@@ -29,7 +29,7 @@ nav{
 
 .sidebar{
     background-color: var(--color-darker);
-    color: var(--color-light);
+    color: var(--color-lighter);
     min-width: 15em;
 }
 
@@ -69,6 +69,7 @@ nav{
     text-decoration: none;
     color: var(--color-lighter);
     transform: scale(1.1);
+    text-shadow: 0 0 0.1em #fffeff;
 }
 
 svg{
@@ -85,20 +86,21 @@ aside svg path {
     fill: var(--color-light);
 }
 
-
-
 main{
     display: flex;
     flex: 1;
     flex-direction: column;
+    width: minmax(0, 1fr);
 }
 
 .header-wrapper{
     padding: 1.5rem 3rem;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--color-lighter);
     justify-content: space-between;
+    box-shadow: 0px 1px 10px black;
+    
 }
 
 .header-top,
@@ -108,12 +110,22 @@ main{
     gap: 5rem;
 }
 
+.header-top{
+    margin-bottom: 2rem;
+}
+
 .search-section{
     flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
     min-width: 18rem;
+    gap: 1rem;
+}
+
+.search-icon{
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .search-bar{
@@ -128,14 +140,36 @@ main{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
+    gap: 1rem;
+    margin: auto;
 }
+
+.profile-section .user-picture img{
+    width: 50px;
+    height: 50px;
+}
+
+.profile-section .user-name{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 
 .user-greeting{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+    font-weight: bold;
+}
+
+.greeting-text-top{
+    font-size: 0.5rem;
+}
+
+.user-greeting .greeting-picture img{
+    width: 70px;
+    height: 70px
 }
 
 .user-actions{
@@ -143,6 +177,23 @@ main{
     gap: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+.user-actions > button{
+    border: 0;
+    padding: 10px 20px;
+    background-color: var(--color-darker);
+    color: var(--color-light);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user-actions > button:hover{
+    transform: scale(1.1);
+    background-color: var(--color-dark);
+    border-color: red;
+    border-style: groove;
 }
 
 .content-section{
@@ -158,7 +209,7 @@ main{
 }
 
 .content-section > h2{
-    font-size: 0.75rem;
+    font-size: 0.70rem;
 }
 
 
@@ -170,7 +221,7 @@ main{
 .side-content-wrapper{
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    flex: 1;
 }
 
 .project-card-wrapper{
@@ -185,9 +236,9 @@ main{
     flex-direction: column;
     padding: 10px 30px;
     border-radius: 5px;
-    background-color: white;
-    border-left: 10px solid blue;
-    box-shadow: 1px 1px 5px black;
+    background-color: var(--color-lighter);
+    border-left: 10px solid var(--color-darker);
+    box-shadow: 0 2px 3px black;
 }
 
 .project-card .card-title{
@@ -217,10 +268,17 @@ main{
 
 .announcement-section,
 .trending-section{
-    background-color: white;
+    background-color: var(--color-lighter);
     box-shadow: 1px 1px 5px black;
     border-radius: 5px;
     font-size: 0.8rem;
     padding: 5px 10px;
+}
+
+.announcement-element{
     border-bottom: 1px solid gray;
+}
+
+.announcement-element:nth-last-child(1){
+    border-bottom: 0;
 }
