@@ -212,6 +212,10 @@ main{
     font-size: 0.70rem;
 }
 
+.project-wrapper  p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
 
 .project-wrapper{
     display: flex;
@@ -273,6 +277,40 @@ main{
     border-radius: 5px;
     font-size: 0.8rem;
     padding: 5px 10px;
+}
+
+.trending-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.trending-element{
+    display: flex;
+    align-items: center; 
+}
+
+.trending-user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+} 
+
+.trending-username{
+    font-weight: bold;
+    margin-bottom: 0.15rem;
+}
+
+.trending-user-text{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.trending-element > img{
+    width: 45px;
+    height: 45px;
 }
 
 .announcement-element{
