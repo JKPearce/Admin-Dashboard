@@ -35,6 +35,7 @@ nav{
 
 .sidebar nav a{
     text-decoration: none;
+    color: var(--color-light);
 }
 
 .sidebar-title{
